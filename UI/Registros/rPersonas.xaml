@@ -34,6 +34,13 @@
 
                 <Label Content="Roles"/>
                 <ComboBox x:Name="RolesComboBox" SelectedValue="{Binding RolId}" />
+
+                <Label Content="Grupos"/>
+                <TextBox x:Name="CantidadGruposTextBox" IsReadOnly="True"  Text="{Binding CantidadGrupos}"/>
+
+                <Label Content="Total Aportado"/>
+                <TextBox x:Name="TotalAportadoTextBox" IsReadOnly="True" Text="{Binding TotalAportado}"/>
+
             </StackPanel>
 
             <!--BARRA DE BOTONES-->
@@ -58,6 +65,5 @@
                 </Button>
             </StackPanel>
         </StackPanel>
-
     </Grid>
 </Window>
